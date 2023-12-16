@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        /* --------navbar-------- */
+
+        header{
+            width: 100%;
+            background-color: black;
+            min-height: 75px;
+             opacity: 0.8;
+             z-index: 1;  
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            
+        }
+
+        ul{
+            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a:hover{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        @media(max-width:991px){
+            nav{
+                flex-direction: column;
+                gap: 20px;
+            }
+            a{
+                font-size: 18px;
+            }
+            ul{
+                /* text-align: center; */
+                justify-content: center;
+            }
+        }
+
+        /* ----------------Home--------- */
+
+        section#s1{
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+            background-image: url(foodbg2.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: auto;
+            /* opacity: 0.89;
+            z-index: -1; */
+            font-family: "Bree Serif', serif";
+        }
+
+        div.food1{
+            /* border: 2px solid black; */
+            width: 75%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .foodh1{
+            font-size: 55px;
+            color: white;
+        }
+
+        .btn1{
+            padding: 10px;
+            width: 150px;
+            border-radius: 10px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            font-size: 18px;
+        }
+
+        .foodp{
+            color: white;
+            font-size: 18px;
+        }
+
+        @media(max-width:991px){
+            div.food1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .foodh1{
+                font-size: 35px;
+                text-align: center;
+            }
+            .foodp{
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+        /* -----------------services------------ */
+
+        main#servicem1{
+            text-align: center;
+            padding: 10px;
+        }
+
+        section#s2services{
+            min-height: 90vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        div.serviced2{
+            border: 2px solid red;
+            border-radius: 20px;
+            width: 60%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .servicesh1{
+            font-size: 55px;
+            /* color: white; */
+        }
+
+        .serviceh2{
+            font-size: 35px;
+        }
+
+        @media(max-width:991px){
+            section#s2services{
+                display: flex;
+                flex-direction: column;
+            }
+            div.serviced2{
+                width: 100%;
+            }
+            .bgimg1{
+                width: 80%;
+            }
+        }
+
+        div.img1{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* border: 2px solid black; */
+            /* width:fit-content; */
+            /* flex-wrap: wrap; */
+            /* width: 400px; */
+            /* height: 350px; */
+            /* position: relative; */
+        }
+
+        .bgimg1{
+            /* position: absolute; */
+            width: 280px;
+            height: 250px;
+        }
+
+        /* ------------clients---------- */
+
+
+        main#mainclient{
+            background-image: url(bg.jpg);
+            background-size: 100% 100%;
+            background-repeat: repeat-x;
+            /* background-position: center; */
+            overflow: auto;
+            min-height: 40px;
+            opacity: 0.8;
+            /* z-index: -1; */
+            color: black;
+
+        }
+
+        section#s3client{
+            /* min-height: 100vh; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        h1.Clienth1{
+            font-size: 55px;
+            text-align: center;
+        }
+
+        @media(max-width:991px){
+            section#s3client{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+
+        /* -------------Contact----------- */
+
+        section#sectioncontact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            background-image: url(contact.jpg);
+            background-size: 100% 100%;
+            background-repeat: repeat-x;
+            background-position: center;
+            overflow: auto;
+        }
+
+        .contactd1{
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+            padding: 10px;
+        }
+
+        label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        input{
+            /* padding: 10px; */
+            width: 80%;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        #message{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        /* @media(max-width:991px){
+            input{
+                width: 100%;
+            }
+        } */
+
+        /* ---------Footer-------- */
+
+        div.footer{
+            min-height: 20px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        .footerp{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- ---------navbar---------- -->
+
+    <header>
+        <nav>
+            <img src="logonav.png" alt="img1" width="50px">
+            <ul>
+                <li>
+                    <a href="#s1" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#servicem1" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="#mainclient" class="nav-link">Client-section</a>
+                </li>
+                <li>
+                    <a href="#sectioncontact" class="nav-link">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ------------Food services------------ -->
+
+    <section id="s1">
+        <div class="food1">
+            <h1 class="foodh1">Welcome to Our Online Food Services</h1>
+            <p class="foodp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eum dolorum facilis autem rem laboriosam.</p>
+            <p class="foodp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, quaerat.</p>
+            <button type="button" class="btn1">Order Now</button>
+        </div>
+    </section>
+
+    <!-- ---------Services--------- -->
+    <main id="servicem1"><h1 class="servicesh1">Our Services</h1>
+    <section id="s2services">
+        <div class="serviced2">
+            <div class="img1"> 
+            <img class="bgimg1" src="4.png" alt="img2">
+        </div>
+            <h2 class="serviceh2">Food Catering</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tempore corrupti reiciendis dolorum quae dolores reprehenderit suscipit sed hic deleniti minus et culpa veniam pariatur sint atque eum magni. Corrupti ipsa possimus aspernatur ipsum explicabo.</p>
+        </div>
+
+        <div class="serviced2">
+            <img class="bgimg1" src="2.png" alt="img3">
+            <h2 class="serviceh2">Bulk Ordering</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tempore corrupti reiciendis dolorum quae dolores reprehenderit suscipit sed hic deleniti minus et culpa veniam pariatur sint atque eum magni. Corrupti ipsa possimus aspernatur ipsum explicabo.</p>
+        </div>
+
+        <div class="serviced2">
+            <img class="bgimg1" src="3.png" alt="img4">
+            <h2 class="serviceh2">Food Ordering</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tempore corrupti reiciendis dolorum quae dolores reprehenderit suscipit sed hic deleniti minus et culpa veniam pariatur sint atque eum magni. Corrupti ipsa possimus aspernatur ipsum explicabo.</p>
+        </div>
+    </section>
+</main>
+
+<main id="mainclient"><h1 class="Clienth1">Our Clients</h1>
+    <section id="s3client">
+        <img src="5bg.png" alt="img5" width="200px">
+        <img src="6bg.png" alt="img9" width="150px">
+        <img src="7bg.png" alt="img6" width="200px">
+        <img src="8bg.png" alt="img7" width="200px">
+        <img src="9bg.png" alt="img8" width="200px">
+    </section>
+</main>
+
+<!-- --------Contact--------- -->
+
+<section id="sectioncontact"><h1 class="Clienth1">Contact Us</h1>
+<div class="contactd1">
+    <label for="name"><h3>Name:</h3>
+        <input type="text" id="name" placeholder="Enter your name">
+    </label>
+    <label for="email"><h3>Email:</h3>
+        <input type="text" id="email" placeholder="Enter your email">
+    </label>
+    <label for="num"><h3>Phone numbar:</h3>
+        <input type="number" id="num" placeholder="Enter your Number">
+    </label>
+    <label for="message"><h3>Message:</h3>
+        <textarea name="mess" id="message" cols="63" rows="10" placeholder="Enter your message"></textarea>
+    </label>
+</div>
+</section>
+
+
+<!-- ----------Footer---------- -->
+
+<div class="footer">
+    <p class="footerp">Copyright©www.OnlinefoodService.com.All right reserved</p>
+</div>
+</body>
+</html>
